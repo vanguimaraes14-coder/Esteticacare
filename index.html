@@ -41,13 +41,13 @@
       <form id="formAgendamento">
         <input type="text" id="nome" placeholder="Digite seu nome" required>
         <input type="email" placeholder="Digite seu e-mail" required>
-        <select required>
+        <select id="procedimento" required>
           <option value="">Selecione o procedimento</option>
           <option>Limpeza de Pele</option>
           <option>Tratamento Facial</option>
           <option>Massagem</option>
         </select>
-        <input type="date" required>
+        <input type="date" id="data" required>
         <button type="submit">Confirmar Agendamento</button>
       </form>
       <p id="mensagem"></p>
