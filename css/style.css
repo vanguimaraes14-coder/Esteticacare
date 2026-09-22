@@ -1,0 +1,30 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f8f8f8; color: #333; }
+.topo { background: #fff; padding: 20px 8%; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 8px #ddd; }
+.logo { font-size:28px; font-weight:bold; color:#b05c7a; }
+.logo span { color:#555; }
+nav a { margin-left:18px; text-decoration:none; color:#555; }
+.hero { min-height:380px; display:flex; align-items:center; padding:60px 12%; background:linear-gradient(135deg,#f7dce5,#fff); }
+.hero div { max-width:600px; }
+.subtitulo { color:#b05c7a; font-weight:bold; }
+h1 { font-size:42px; margin:15px 0; }
+.hero p { line-height:1.6; }
+button { background:#b05c7a; color:white; border:none; padding:13px 22px; border-radius:6px; cursor:pointer; margin-top:20px; }
+button:hover { opacity:.85; }
+.secao { padding:55px 10%; text-align:center; }
+.secao h2 { margin-bottom:30px; font-size:30px; color:#b05c7a; }
+.cards { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+.card,.tratamento { background:white; padding:25px; border-radius:10px; box-shadow:0 2px 10px #ddd; width:280px; text-align:left; }
+.card h3 { margin-bottom:12px; color:#b05c7a; }
+.formulario { background:#f2e5e9; }
+form { max-width:500px; margin:auto; display:flex; flex-direction:column; gap:12px; }
+input,select { padding:14px; border:1px solid #ccc; border-radius:6px; font-size:16px; }
+form button { margin-top:0; }
+#mensagem { margin-top:15px; font-weight:bold; color:#467a46; }
+.tratamento { margin:auto; width:min(450px,100%); }
+footer { text-align:center; padding:25px; background:#333; color:white; }
+@media(max-width:700px) {
+  .topo { flex-direction:column; gap:15px; }
+  nav a { margin:0 7px; }
+  h1 { font-size:32px; }
+}

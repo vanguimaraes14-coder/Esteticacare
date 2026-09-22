@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EstéticaCare</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="logo">Estética<span>Care</span></div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#procedimentos">Procedimentos</a>
+      <a href="#agendamento">Agendamento</a>
+      <a href="#tratamento">Meu Tratamento</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div>
+        <p class="subtitulo">Sistema de estética</p>
+        <h1>Cuide da sua beleza com a EstéticaCare</h1>
+        <p>Agende procedimentos e acompanhe seus tratamentos de forma simples e rápida.</p>
+        <button onclick="mostrarMensagem()">Agendar agora</button>
+      </div>
+    </section>
+
+    <section id="procedimentos" class="secao">
+      <h2>Procedimentos</h2>
+      <div class="cards">
+        <article class="card"><h3>Limpeza de Pele</h3><p>Cuidados e renovação para sua pele.</p></article>
+        <article class="card"><h3>Tratamento Facial</h3><p>Procedimentos para saúde e beleza facial.</p></article>
+        <article class="card"><h3>Massagem</h3><p>Relaxamento e bem-estar para você.</p></article>
+      </div>
+    </section>
+
+    <section id="agendamento" class="secao formulario">
+      <h2>Agendamento</h2>
+      <form id="formAgendamento">
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+        <input type="email" placeholder="Digite seu e-mail" required>
+        <select required>
+          <option value="">Selecione o procedimento</option>
+          <option>Limpeza de Pele</option>
+          <option>Tratamento Facial</option>
+          <option>Massagem</option>
+        </select>
+        <input type="date" required>
+        <button type="submit">Confirmar Agendamento</button>
+      </form>
+      <p id="mensagem"></p>
+    </section>
+
+    <section id="tratamento" class="secao">
+      <h2>Meu Tratamento</h2>
+      <div class="tratamento">
+        <p><strong>Status:</strong> Em andamento</p>
+        <p><strong>Sessões realizadas:</strong> 2</p>
+        <p><strong>Sessões restantes:</strong> 4</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 EstéticaCare - Projeto Integrador II</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
