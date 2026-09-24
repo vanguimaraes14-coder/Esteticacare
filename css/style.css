@@ -19,7 +19,6 @@ button:hover { opacity: .85; }
 /* TRAVA DEFINITIVA - IMAGENS NUNCA MAIS GIGANTES */
 .card img { width: 100% !important; height: 85px !important; object-fit: cover !important; border-radius: 8px; display: block; }
 .formulario { background: #f2e5e9; }
-.formulario { background: #f2e5e9; }
 form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 12px; }
 input, select { padding: 14px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; }
 form button { margin-top: 0; }
