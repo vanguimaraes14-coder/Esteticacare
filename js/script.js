@@ -2,7 +2,7 @@ function mostrarMensagem() {
   document.getElementById("agendamento").scrollIntoView({ behavior: "smooth" });
 }
 
-document.getElementById("formAgendamento").addEventListener("submit", async function(e){
+document.getElementById("formAgendamento").addEventListener("submit", async function(e) {
   e.preventDefault();
 
   const nome = document.getElementById("nome").value;
@@ -12,9 +12,8 @@ document.getElementById("formAgendamento").addEventListener("submit", async func
 
   const mensagemEl = document.getElementById("mensagem");
   mensagemEl.textContent = "Enviando...";
-  
+
   try {
-    // Se a API estiver rodando, envia. Se não, só mostra mensagem local
     if (typeof API_BASE_URL !== 'undefined') {
       await apiRequest('/agendamentos', 'POST', { nome, telefone, procedimento, data });
     }
@@ -22,7 +21,7 @@ document.getElementById("formAgendamento").addEventListener("submit", async func
     mensagemEl.style.color = "green";
     this.reset();
   } catch (error) {
-    mensagemEl.textContent = "Erro ao agendar: " + error.message + " - mas seu pedido foi anotado localmente!";
+    mensagemEl.textContent = "Erro ao agendar: " + error.message;
     mensagemEl.style.color = "orange";
   }
 });
